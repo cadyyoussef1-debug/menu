@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>منيو بن كادي</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@400;500;600;700&family=Amiri:wght@700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="menu.css">
+  <script src="menu.js" defer></script>
+</head>
+<body>
+  <main class="page">
+    <nav class="nav" aria-label="القائمة الرئيسية">
+      <a class="brand-mini" href="index.html" aria-label="بن كادي - الرئيسية">
+        <img src="222.png" alt="لوجو بن كادي">
+      </a>
+
+      <button
+        class="nav-toggle"
+        type="button"
+        aria-expanded="false"
+        aria-controls="navlinks"
+        aria-label="فتح القائمة"
+      >☰</button>
+
+      <div class="navlinks" id="navlinks">
+        <a href="index.html">الرئيسية</a>
+        <a href="offers.html">العروض</a>
+        <a class="active" href="menu.html" aria-current="page">المنيو</a>
+      </div>
+    </nav>
+
+    <svg class="brand-banner" viewBox="0 0 1200 330" role="img" aria-labelledby="banner-title">
+      <title id="banner-title">بن كادي — قهوة على مزاجك</title>
+      <defs>
+        <linearGradient id="banner-bg" x1="0" y1="0" x2="1" y2="1">
+          <stop stop-color="#433128"/>
+          <stop offset=".6" stop-color="#6b5039"/>
+          <stop offset="1" stop-color="#66705b"/>
+        </linearGradient>
+        <radialGradient id="cup-color">
+          <stop stop-color="#fffaf0"/>
+          <stop offset="1" stop-color="#d9c6a6"/>
+        </radialGradient>
+      </defs>
+
+      <rect width="1200" height="330" rx="28" fill="url(#banner-bg)"/>
+      <circle cx="1040" cy="38" r="180" fill="#fff" opacity=".035"/>
+      <circle cx="80" cy="300" r="205" fill="#fff" opacity=".035"/>
+
+      <g fill="#d1ad76" opacity=".75">
+        <ellipse cx="122" cy="80" rx="22" ry="11" transform="rotate(32 122 80)"/>
+        <ellipse cx="196" cy="237" rx="18" ry="9" transform="rotate(-30 196 237)"/>
+        <ellipse cx="1010" cy="252" rx="19" ry="10" transform="rotate(24 1010 252)"/>
+        <ellipse cx="1090" cy="108" rx="18" ry="9" transform="rotate(-25 1090 108)"/>
+      </g>
+
+      <g transform="translate(865 83)">
+        <ellipse cx="105" cy="164" rx="121" ry="22" fill="#2e241f" opacity=".28"/>
+        <path d="M35 72h145l-12 79q-8 42-60 42t-61-42z" fill="url(#cup-color)"/>
+        <path d="M178 87h22a31 31 0 0 1 0 61h-30" fill="none" stroke="#e8d9bf" stroke-width="14"/>
+        <ellipse cx="107" cy="75" rx="73" ry="17" fill="#f7efe1"/>
+        <ellipse cx="107" cy="75" rx="58" ry="11" fill="#553c2d"/>
+        <path d="M87 38q-13-19 2-32M119 40q-13-21 2-35" fill="none" stroke="#eee3d1" stroke-width="5" stroke-linecap="round" opacity=".7"/>
+      </g>
+
+      <text x="650" y="143" text-anchor="middle" fill="#f6eedf" font-family="Tahoma,Arial,sans-serif" font-size="26">قهوة على مزاجك</text>
+      <text x="650" y="226" text-anchor="middle" fill="#fffaf1" font-family="Tahoma,Arial,sans-serif" font-weight="700" font-size="76">بن كادي</text>
+      <path d="M495 250h310" stroke="#c9a66b" stroke-width="2"/>
+      <text x="650" y="287" text-anchor="middle" fill="#e8d9bf" font-family="Tahoma,Arial,sans-serif" font-size="19">دفء القهوة… وحلاوة اللمة</text>
+    </svg>
+
+    <header class="hero">
+      <div class="hero-copy">
+        <div class="eyebrow">قهوة ومشروبات • قائمة الأسعار</div>
+        <h1>منيو القهوة</h1>
+        <p>اختاري مشروبك المفضل واستمتعي بلحظة دافئة</p>
+      </div>
+      <div class="cup" aria-hidden="true">☕</div>
+    </header>
+
+    <section class="section">
+      <div class="section-head">
+        <h2>توليفات NORMAL</h2>
+        <span class="tag">أسعار حسب الوزن • جنيه</span>
+      </div>
+      <div class="table-wrap">
+        <table class="blends">
+          <thead>
+            <tr>
+              <th>الصنف</th>
+              <th>النوع</th>
+              <th>ثمن كيلو</th>
+              <th>ربع كيلو</th>
+              <th>نصف كيلو</th>
+              <th>كيلو</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td rowspan="2">شرقي</td><td>سادة</td><td>65</td><td>130</td><td>260</td><td>520</td></tr>
+            <tr><td>محوج</td><td>75</td><td>150</td><td>300</td><td>600</td></tr>
+            <tr><td rowspan="2">غامق</td><td>سادة</td><td>75</td><td>150</td><td>300</td><td>600</td></tr>
+            <tr><td>محوج</td><td>85</td><td>170</td><td>340</td><td>680</td></tr>
+            <tr><td rowspan="2">كادي</td><td>سادة</td><td>75</td><td>150</td><td>300</td><td>600</td></tr>
+            <tr><td>محوج</td><td>85</td><td>170</td><td>340</td><td>680</td></tr>
+            <tr><td rowspan="2">اسبيشيال</td><td>سادة</td><td>85</td><td>170</td><td>340</td><td>680</td></tr>
+            <tr><td>محوج</td><td>95</td><td>190</td><td>380</td><td>760</td></tr>
+            <tr><td rowspan="2">برازيلي</td><td>سادة</td><td>85</td><td>170</td><td>340</td><td>680</td></tr>
+            <tr><td>محوج</td><td>95</td><td>190</td><td>380</td><td>760</td></tr>
+            <tr><td rowspan="2">حبشي</td><td>سادة</td><td>85</td><td>170</td><td>340</td><td>680</td></tr>
+            <tr><td>محوج</td><td>95</td><td>190</td><td>380</td><td>760</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-head">
+        <h2>توليفات VIP</h2>
+        <span class="tag">أسعار حسب الوزن • جنيه</span>
+      </div>
+      <div class="table-wrap">
+        <table class="blends">
+          <thead>
+            <tr>
+              <th>الصنف</th>
+              <th>النوع</th>
+              <th>100 جم</th>
+              <th>ربع كيلو</th>
+              <th>نصف كيلو</th>
+              <th>كيلو</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td rowspan="2">الحاج</td><td>سادة</td><td>100</td><td>200</td><td>400</td><td>800</td></tr>
+            <tr><td>محوج</td><td>110</td><td>220</td><td>440</td><td>880</td></tr>
+            <tr><td rowspan="2">70%</td><td>سادة</td><td>95</td><td>190</td><td>380</td><td>760</td></tr>
+            <tr><td>محوج</td><td>105</td><td>210</td><td>420</td><td>840</td></tr>
+            <tr><td rowspan="2">100%</td><td>سادة</td><td>105</td><td>210</td><td>420</td><td>840</td></tr>
+            <tr><td>محوج</td><td>115</td><td>230</td><td>460</td><td>920</td></tr>
+            <tr><td>إسبريسو</td><td>80%</td><td>90</td><td>180</td><td>360</td><td>720</td></tr>
+            <tr><td>نسكافيه</td><td>كلاسيك</td><td>—</td><td>—</td><td>—</td><td>1200</td></tr>
+            <tr><td>فرنساوي</td><td>—</td><td>70</td><td>140</td><td>280</td><td>560</td></tr>
+            <tr><td>نكهات</td><td>—</td><td>70</td><td>140</td><td>280</td><td>560</td></tr>
+            <tr><td>تخسيس</td><td>—</td><td>70</td><td>140</td><td>280</td><td>560</td></tr>
+          </tbody>
+        </table>
+      </div>
+      
+    </section>
+
+    <section class="section">
+      <div class="section-head">
+        <h2>القهوة والمشروبات</h2>
+        <span class="tag">أسعار المشروبات</span>
+      </div>
+      <div class="grid">
+        <article class="card">
+          <h3>قهوة تركي</h3>
+          <div class="item"><span class="name">تركي سادة</span><i class="dots"></i><span class="price">15 <small class="currency">جنيه</small></span></div>
+          <div class="item"><span class="name">تركي محوج</span><i class="dots"></i><span class="price">15 <small class="currency">جنيه</small></span></div>
+          <div class="item"><span class="name">تركي غامق</span><i class="dots"></i><span class="price">20 <small class="currency">جنيه</small></span></div>
+          <div class="item"><span class="name">تركي اسبيشيال</span><i class="dots"></i><span class="price">20 <small class="currency">جنيه</small></span></div>
+          <div class="item"><span class="name">قهوة أمريكي</span><i class="dots"></i><span class="price">25 <small class="currency">جنيه</small></span></div>
+        </article>
+
+        <article class="card">
+          <h3>قهوة ومشروبات ساخنة</h3>
+          <div class="item"><span class="name">قهوة فرنساوي</span><i class="dots"></i><span class="price">30 <small class="currency">جنيه</small></span></div>
+          <div class="item"><span class="name">قهوة نكهات</span><i class="dots"></i><span class="price">30 <small class="currency">جنيه</small></span></div>
+          <div class="item"><span class="name">نسكافيه</span><i class="dots"></i><span class="price">30 <small class="currency">جنيه</small></span></div>
+          <div class="item"><span class="name">هوت شوكلت</span><i class="dots"></i><span class="price">25 <small class="currency">جنيه</small></span></div>
+        </article>
+
+        <article class="card">
+          <h3>الشاي والأعشاب</h3>
+          <div class="item"><span class="name">شاي</span><i class="dots"></i><span class="price">8 <small class="currency">جنيه</small></span></div>
+          <div class="item"><span class="name">شاي فتلة</span><i class="dots"></i><span class="price">10 <small class="currency">جنيه</small></span></div>
+          <div class="item"><span class="name">ينسون</span><i class="dots"></i><span class="price">10 <small class="currency">جنيه</small></span></div>
+          <div class="item"><span class="name">جنزبيل</span><i class="dots"></i><span class="price">10 <small class="currency">جنيه</small></span></div>
+          <div class="item"><span class="name">قرفة</span><i class="dots"></i><span class="price">10 <small class="currency">جنيه</small></span></div>
+        </article>
+
+        <article class="card">
+          <h3>مشروبات دافئة ومياه</h3>
+          <div class="item"><span class="name">قرفة بحليب</span><i class="dots"></i><span class="price">20 <small class="currency">جنيه</small></span></div>
+          <div class="item"><span class="name">سحلب مكسرات</span><i class="dots"></i><span class="price">30 <small class="currency">جنيه</small></span></div>
+          <div class="item"><span class="name">مياه معدنية صغيرة</span><i class="dots"></i><span class="price">7 <small class="currency">جنيه</small></span></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-head">
+        <h2>إضافات</h2>
+      </div>
+      <div class="extras">
+        <div class="extra"><span>تحويجة</span><strong>10 جنيه</strong></div>
+        <div class="extra"><span>جوزة الطيب</span><strong>5 جنيه</strong></div>
+      </div>
+    </section>
+
+    <footer class="footer contact-footer">
+      <div class="contact-line"><b>العنوان</b><span class="contact-blank" aria-label="مساحة لكتابة العنوان"></span></div>
+      <div class="contact-line"><b>رقم الهاتف</b><span class="contact-blank" aria-label="مساحة لكتابة رقم الهاتف"></span></div>
+      <div class="contact-line"><b>مواعيد العمل</b><span class="contact-blank" aria-label="مساحة لكتابة مواعيد العمل"></span></div>
+      <div class="footer-slogan"><span>أهلاً بكم في كل وقت</span><b>قهوتكم… على مزاجكم</b></div>
+    </footer>
+  </main>
+</body>
+</html>

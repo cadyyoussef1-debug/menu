@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f5eee5">
+  <title>عروض بن كادي</title>
+  <link rel="stylesheet" href="offers.css">
+
+  <style>
+    .logo {
+      display: flex;
+      align-items: center;
+    }
+
+    .logo img {
+      display: block;
+      width: 96px;
+      height: 60px;
+      object-fit: contain;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <a class="logo" href="index.html" aria-label="بن كادي - الرئيسية">
+      <img src="222.png" alt="لوجو بن كادي">
+    </a>
+
+    <nav class="links" aria-label="القائمة الرئيسية">
+      <a href="index.html">الرئيسية</a>
+      <a href="menu.html">المنيو</a>
+      <a href="offers.html" aria-current="page">العروض</a>
+    </nav>
+
+    <button class="hamb" type="button" aria-label="فتح القائمة" aria-expanded="false">☰</button>
+  </header>
+
+  <main>
+    <section class="intro">
+      <h1>عروض بن كادي</h1>
+    </section>
+
+    <section class="offers">
+      <article class="offer">
+        <img src="ben-kady-assets/offer-latte.jpg" لاalt="فنجان لاتيه مع حبوب البن">
+        <div class="details">
+          <span class="badge">★ عرض مميز</span>
+          <h2>عرض القهوة</h2>
+          <p>قهوة مختارة + مشروب ساخن</p>
+          <div class="price">
+            <span class="now">80 ج</span>
+            <span class="old">100 ج</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="offer">
+        <img src="ben-kady-assets/offer-friends.jpg" alt="فنجانان قهوة للأصدقاء">
+        <div class="details">
+          <span class="badge">🔥 الأكثر طلباً</span>
+          <h2>عرض الأصدقاء</h2>
+          <p>2 مشروب ساخن بسعر خاص</p>
+          <div class="price">
+            <span class="now">110 ج</span>
+            <span class="old">140 ج</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="offer">
+        <img src="ben-kady-assets/offer-beans.jpg" alt="حبوب بن محمصة">
+        <div class="details">
+          <span class="badge">◷ لفترة محدودة</span>
+          <h2>عرض البن</h2>
+          <p>خصم على أنواع البن المختارة</p>
+          <span class="discount">خصم 20%</span>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <footer>☕ قهوة جيدة .. يوم أفضل</footer>
+
+  <script src="offers.js" defer></script>
+</body>
+</html>

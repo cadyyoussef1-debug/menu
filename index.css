@@ -1,0 +1,33 @@
+:root{--cream:#f5eee5;--coffee:#4a2e1d;--tan:#987354;--ink:#332216}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--cream);color:var(--ink);font-family:Tahoma,Arial,sans-serif}
+.hero{min-height:100svh;position:relative;display:grid;place-items:center;text-align:center;overflow:hidden;padding:100px 22px 250px;background:radial-gradient(ellipse at 50% 52%,#fffaf2 0%,var(--cream) 68%)}
+.brand{font-size:clamp(3rem,9vw,6rem);font-weight:900;letter-spacing:-3px;margin:0;color:var(--coffee)}
+.tagline{font-size:clamp(1.1rem,4vw,2rem);color:var(--tan);margin:15px 0 42px}
+.cup{font-size:1em}
+.cta{display:inline-flex;align-items:center;gap:14px;padding:18px 42px;border-radius:99px;background:var(--coffee);color:#fff8ef;text-decoration:none;font-size:1.2rem;transition:transform .2s,background .2s}
+.cta:hover{transform:translateY(-3px);background:#67472f}
+.menu{position:absolute;z-index:2;top:22px;left:24px;border:0;background:none;color:var(--coffee);font-size:2rem;cursor:pointer}
+.nav{display:none;position:absolute;top:70px;left:20px;background:#fffaf2;padding:15px 22px;border-radius:18px;box-shadow:0 8px 30px #4a2e1d20}
+.nav.open{display:grid;gap:14px}
+.nav a{color:var(--coffee);text-decoration:none}
+.decor{position:absolute;border-radius:50%;background:#ead9c7;opacity:.55;width:220px;height:220px}
+.decor.one{top:-130px;right:-75px}
+.decor.two{bottom:-160px;left:-60px;width:300px;height:300px}
+.beans{position:absolute;bottom:0;left:0;width:min(36vw,390px);height:clamp(170px,28vh,330px);object-fit:cover;object-position:left bottom;mask-image:linear-gradient(90deg,#000 75%,transparent);border-radius:0 50% 0 0}
+.sprig{position:absolute;color:#9a7454;font-size:4rem;opacity:.65}
+.sprig.a{top:90px;right:8%}
+.sprig.b{bottom:9%;right:8%}
+.hint{position:absolute;bottom:24px;font-size:.8rem;color:#987354}
+@media(max-width:600px){
+  .hero{padding:90px 18px 240px}
+  .brand{letter-spacing:-2px}
+  .cta{padding:16px 32px}
+  .beans{width:58vw;height:200px}
+  .sprig.a{top:100px;right:4%;font-size:2.5rem}
+  .sprig.b{display:none}
+  .menu{left:18px;top:15px}
+  .hint{display:none}
+}
+
