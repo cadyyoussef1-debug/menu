@@ -3,38 +3,36 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#f5eee5">
+  <meta name="theme-color" content="#f7f3ec">
   <title>عروض بن كادي</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@400;500;600;700&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="offers.css">
-
-  <style>
-    .logo {
-      display: flex;
-      align-items: center;
-    }
-
-    .logo img {
-      display: block;
-      width: 96px;
-      height: 60px;
-      object-fit: contain;
-    }
-  </style>
+  <script src="offers.js" defer></script>
 </head>
 <body>
-  <header>
-    <a class="logo" href="index.html" aria-label="بن كادي - الرئيسية">
+  <nav class="nav" aria-label="القائمة الرئيسية">
+    <a class="brand-mini" href="index.html" aria-label="بن كادي - الرئيسية">
       <img src="222.png" alt="لوجو بن كادي">
     </a>
 
-    <nav class="links" aria-label="القائمة الرئيسية">
-      <a href="index.html">الرئيسية</a>
-      <a href="menu.html">المنيو</a>
-      <a href="offers.html" aria-current="page">العروض</a>
-    </nav>
+    <button
+      class="nav-toggle"
+      type="button"
+      aria-expanded="false"
+      aria-controls="navlinks"
+      aria-label="فتح القائمة"
+    >☰</button>
 
-    <button class="hamb" type="button" aria-label="فتح القائمة" aria-expanded="false">☰</button>
-  </header>
+    <div class="navlinks" id="navlinks">
+      <a href="index.html">الرئيسية</a>
+      <a class="active" href="offers.html" aria-current="page">العروض</a>
+      <a href="menu.html">المنيو</a>
+    </div>
+  </nav>
 
   <main>
     <section class="intro">
@@ -43,7 +41,7 @@
 
     <section class="offers">
       <article class="offer">
-        <img src="ben-kady-assets/offer-latte.jpg" لاalt="فنجان لاتيه مع حبوب البن">
+        <img src="haewon-oh--PCNUncJ3R0-unsplash.jpg" alt="فنجان لاتيه مع حبوب البن">
         <div class="details">
           <span class="badge">★ عرض مميز</span>
           <h2>عرض القهوة</h2>
@@ -56,7 +54,7 @@
       </article>
 
       <article class="offer">
-        <img src="ben-kady-assets/offer-friends.jpg" alt="فنجانان قهوة للأصدقاء">
+        <img src="daniel-AEgYnTf-VOI-unsplash.jpg" alt="فنجانان قهوة للأصدقاء">
         <div class="details">
           <span class="badge">🔥 الأكثر طلباً</span>
           <h2>عرض الأصدقاء</h2>
@@ -69,7 +67,7 @@
       </article>
 
       <article class="offer">
-        <img src="ben-kady-assets/offer-beans.jpg" alt="حبوب بن محمصة">
+        <img src="nathan-dumlao-PDipEilB0b8-unsplash.jpg" alt="حبوب بن محمصة">
         <div class="details">
           <span class="badge">◷ لفترة محدودة</span>
           <h2>عرض البن</h2>
@@ -81,7 +79,5 @@
   </main>
 
   <footer>☕ قهوة جيدة .. يوم أفضل</footer>
-
-  <script src="offers.js" defer></script>
 </body>
 </html>

@@ -1,0 +1,23 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" width="300" height="84" viewBox="0 0 300 84">
+<defs>
+ <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#241810"/><stop offset=".55" stop-color="#49301f"/><stop offset="1" stop-color="#725239"/></linearGradient>
+ <linearGradient id="cup" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#fff8e9"/><stop offset="1" stop-color="#d6c6a7"/></linearGradient>
+ <filter id="shadow" x="-30%" y="-30%" width="160%" height="180%"><feGaussianBlur stdDeviation="3"/></filter>
+</defs>
+<rect width="300" height="84" rx="8" fill="url(#bg)"/>
+<path d="M0 70 C55 54 73 98 137 75 S231 53 300 70 V84 H0Z" fill="#1e1712" opacity=".25"/>
+<circle cx="28" cy="19" r="17" fill="#b58a53" opacity=".10"/><circle cx="28" cy="19" r="10" fill="none" stroke="#d6b87e" opacity=".25"/>
+<g transform="translate(218 15)">
+ <ellipse cx="24" cy="53" rx="25" ry="5" fill="#120d09" opacity=".42" filter="url(#shadow)"/>
+ <path d="M48 27h7a8 8 0 0 1 0 17h-8" fill="none" stroke="#d9c8a8" stroke-width="4"/>
+ <path d="M7 22h40l-4 27a6 6 0 0 1-6 5H18a6 6 0 0 1-6-5Z" fill="url(#cup)"/>
+ <ellipse cx="27" cy="22" rx="20" ry="4.8" fill="#eee4d0" stroke="#f8f1e3" stroke-width="1"/>
+ <ellipse cx="27" cy="23" rx="16" ry="2.4" fill="#382316"/>
+ <path d="M13 43q14 6 29 0" fill="none" stroke="#fff" opacity=".25"/>
+</g>
+
+<text x="165" y="44" text-anchor="end" direction="rtl" unicode-bidi="plaintext" font-family="Arial, sans-serif" font-size="21" font-weight="700" fill="#fff7e8">بن كادي</text>
+<text x="165" y="61" text-anchor="end" direction="rtl" unicode-bidi="plaintext" font-family="Arial, sans-serif" font-size="9" fill="#e5c58b">قهوة كما تهوى</text>
+<g fill="#c99d5d" opacity=".75"><ellipse cx="66" cy="23" rx="5" ry="2.3" transform="rotate(28 66 23)"/><path d="M65 20q3 3 0 6" fill="none" stroke="#5a3d24" stroke-width=".7"/><ellipse cx="96" cy="66" rx="4" ry="2" transform="rotate(-25 96 66)"/><path d="M94 64q3 2 2 5" fill="none" stroke="#5a3d24" stroke-width=".7"/></g>
+<text x="25" y="72" font-family="Arial,sans-serif" font-size="6" letter-spacing="1.3" fill="#d9c5a2" opacity=".8">ROASTED WITH CARE</text>
+</svg>
